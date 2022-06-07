@@ -1,0 +1,273 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+body{
+ padding: 0px;
+ margin:0px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+.sidebar{
+  width:22%;
+  height:100%;
+  background-color: #f5ad1186;
+  float: left;
+  border-top-right-radius:0px;
+
+}
+
+.menu_content
+{
+    width:78%;
+    height: 100%;
+    float: left;
+    background-color:white;
+    border-top: 0px solid #f5ad1186;
+}
+
+/* start dashboard coding  */
+.dashboard{
+    width: 100%;
+    height: 60px;
+    float: left;
+    padding: 20px 14px;
+     border-top-right-radius: 10px;
+     margin-bottom: 0px;
+     position: relative;
+}
+
+.dashboard_txt{
+    text-align: center;
+    display: block;
+    color:#000;
+    font-family:roboto;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+}
+
+.bar_icon{
+    display: block;
+    float: right;
+    cursor: pointer;
+    position:absolute;
+    bottom: 18px;
+    right: 12px;
+    color:#000;
+
+}
+
+.home{
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+}
+
+.home_txt{
+    color: #000;
+    text-align:left;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    width: 60%;
+    float:left;
+    font-size: 12px;
+}
+
+.home_icon{
+    width: 40%;
+    float: left;
+    text-align:center; 
+    color:#000; 
+}
+
+
+
+.services{
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+}
+
+.services_txt{
+    color:#000;
+    text-align:left;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    width: 60%;
+    float:left;
+    font-size: 12px;
+}
+
+.services_icon{
+    width: 40%;
+    float: left;
+    text-align:center; 
+    color:#000; 
+}
+
+.products{
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+}
+
+.products_txt{
+    color:#000;
+    text-align:left;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    width: 60%;
+    float:left;
+    font-size: 12px;
+}
+
+.products_icon{
+    width: 40%;
+    float: left;
+    text-align:center;
+    color:#000; 
+}
+
+
+.appointment{
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    cursor: pointer;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment_txt{
+    color:#000;
+    text-align:left;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    width: 60%;
+    float:left;
+    font-size: 12px;
+
+}
+
+.appointment_icon{
+    width: 40%;
+    float: left;
+    text-align:center;  
+    color:#000; 
+}
+
+
+.consult{
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+}
+
+.consult_txt{
+    color:#000;
+    text-align:left;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    width: 60%;
+    float:left;
+    font-size: 12px;
+
+}
+
+.consult_icon{
+    width: 40%;
+    float: left;
+    text-align:center;  
+    color:#000; 
+}
+
+
+.contact{
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+}
+
+.contact_txt{
+    color:#000;
+    text-align:left;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    width: 60%;
+    float:left;
+    font-size: 12px;
+
+}
+
+.contact_icon{
+    width: 40%;
+    float: left;
+    text-align:center;  
+    color:#000; 
+}
+
+#active {
+    background-color:white;
+}
+
+
+/* End dashboard coding */
+
+
+/* Content-title */
+
+#content-title
+{
+    width: 100%;
+    height:40px;
+    background-color: #f5ad1186;
+    float: left;
+    padding: 10px;
+}
+
+#version{
+    color:white;
+    text-align: center;
+    float: left;
+}
+
+.remove-focus{
+    outline:none!important;
+    box-shadow:none!important;
+}
