@@ -31,16 +31,12 @@ function login_validate(response){
    {
     for(var j =0;j<response[i].length;j++)
     {
-     // alert(response[i][j]);
         if(response[i][j]=="User login !,")
         {
-           alert("54");
         window.location = "user/profile.php";
         }
          else
          {
-           
-         
         var toast_span = document.createElement("p");
         toast_span.style.width="300px";
        toast_span.style.height="33px";

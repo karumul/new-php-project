@@ -129,7 +129,7 @@ function getData(){
 
 
 
-/*
+
 //Start menu set coding
 const select_input = document.querySelector("#set_select_menu");
 var dynamic_input_div = document.querySelector("#dynamic_input_div");
@@ -430,7 +430,7 @@ var reg_exp =   /^[a-zA-Z\s]+$/;
 }
 });
 
-*/
+
 
 
 

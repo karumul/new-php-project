@@ -38,9 +38,7 @@ let log_signup = document.getElementById("login_signup");
 let form_cont = document.getElementById("dynamic_form_cont");
 log_signup.onclick = function (){
     var c_text = this.innerHTML;
-   alert(c_text);
     if(c_text==="Signup"){
-     //   alert("yes");
         this.innerHTML="Login";
         form_cont.innerText="";
         var form = document.createElement("form");
@@ -92,9 +90,6 @@ log_signup.onclick = function (){
         social_div.style.alignItems="center";
        
 
-    
-
-
         var f_signup = document.createElement("DIV");
         f_signup.className="facebook_signup";
         f_signup.style.cursor="pointer";
@@ -127,13 +122,13 @@ log_signup.onclick = function (){
         f_s_txt.style.fontFamily="roboto";
         f_s_txt.style.color="#FFFFFF";
 
-
-      
-
-
         f_signup.append(f_span_text);
         f_signup.append(f_s_txt);
         social_div.append(f_signup);
+
+        f_signup.onclick = function(){
+            alert();
+        }
 
 
 
@@ -234,8 +229,7 @@ log_signup.onclick = function (){
         var full_name = document.getElementById("full_name");
         var password = document.getElementById("password");
         var con_password = document.getElementById("con_password");
-        alert(password.value,888888);
-        alert(con_password.value,888888);
+     
 
           
             var xhttp = new XMLHttpRequest();
@@ -274,8 +268,7 @@ log_signup.onclick = function (){
                      $(".signup_form").reset('reset');
                  }
                 
-
-                  //Close the validation toast
+                //Close the validation toast
                  var toast_close = document.getElementById("close_toast");
                  toast_close.onclick = function(){
                  $('.toast').toast('hide');
@@ -318,7 +311,6 @@ login_btn.onclick = function(){
     xhttp.onreadystatechange = function(){
         if(this.readyState==4 && this.status==200)
         {
-    //alert(this.status);
     console.log(this.response);
     const response = JSON.parse(this.responseText);
     login_validate(response);
@@ -355,7 +347,6 @@ function login_validate(response){
         notice_cont.append(toast_span);
         $(".toast").toast({delay:20000});
         $('.toast').toast('show');
-      
     }
    }
       //Close the validation toast
@@ -363,8 +354,6 @@ function login_validate(response){
       toast_close.onclick = function(){
         $('.toast').toast('hide');
 }
-
-
     }
 }
 }

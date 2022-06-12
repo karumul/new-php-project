@@ -2,10 +2,6 @@
 
 
 require_once "php/database.php";
-
-
-
-
 // echo $_POST['email'];
 // echo "<br>";
 // echo $_POST['full_name'];
@@ -13,9 +9,6 @@ require_once "php/database.php";
 // echo $_POST['password'];
 // echo "<br>";
 // echo $_POST['con_password'];
-
-
-
 
 
 $emt_array = array();
@@ -30,15 +23,16 @@ array_push($emt_array,$username_error);
 }
 else
 {
+
 $email =  mysqli_real_escape_string($db->db_object,$_POST['email']);
-    // Function to validate email using regular expression
+// Function to validate email using regular expression
 function email_validation($email) {
     return (!preg_match(
 "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^", $email))
         ? FALSE : TRUE;
 }
 
-// Function call
+// Function call validation email
 if(!email_validation($email)) {
     $e_validate =  "Invalid email !";
    // echo "In_Valid";
@@ -49,7 +43,6 @@ else {
     $e_validate =  "Valid mail !"; 
     array_push($validate_array,$e_validate);    
 }
-
 }
   
 
@@ -133,14 +126,12 @@ else
 
 $data = [$validate_array,$emt_array];
 
-
 if(empty($emt_array))
 {
   if($validate_array[0]==="Valid mail !" && $validate_array[1]==="Valid fullname !" && $validate_array[2]==="pass_valid !" && $validate_array[3]==="con_pass_valid !")
-  {
-     
-$s_object = new Signup($data);
-$s_object->signup_user();
+  {      
+    $s_object = new Signup($data);
+    $s_object->signup_user();
   }
 }
 
@@ -232,7 +223,7 @@ public function signup_user(){
                        {
                
                            $this->message =  "Signup success !";
-               
+    
                        }
                        else
                        {
@@ -245,7 +236,6 @@ public function signup_user(){
                       }
             }
 //return false;
-
     }
     
      //$data(json_encode(array($this->message)));
